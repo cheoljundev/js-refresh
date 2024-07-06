@@ -205,12 +205,23 @@ function transformToObjects(numberArray) {
 
 // # 함수 내부에서 함수 정의하기
 
-function init(){
-    function greet(){
-        console.log("Hi!");
-    }
+// function init(){
+//     function greet(){
+//         console.log("Hi!");
+//     }
+//
+//     greet();
+// }
+//
+// init();
 
-    greet();
-}
+// # 참조형과 기본 값 비교
 
-init();
+let userMessage = "Hello!";
+userMessage = userMessage.concat("!!!"); // 기본형은 그 자체를 변경할 수 없고, 항상 새로운 기본형을 재할당한다.
+
+console.log(userMessage);
+
+const hobbies = ["Sports", "Cooking"];
+hobbies.push("Working"); // hobbies가 const로 선언되었음에도 추가가 가능하다.
+console.log(hobbies);
