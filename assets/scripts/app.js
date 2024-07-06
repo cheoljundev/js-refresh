@@ -139,21 +139,39 @@ function transformToObjects(numberArray) {
 // console.log(age);
 
 // # 스프레드 연산자
+//
+// const hobbies = ["Sports", "Cooking", "Reading"];
+// const newHobbies = ["Gaming"];
+//
+// const mergeHobbies = [...hobbies ,...newHobbies];
+// console.log(mergeHobbies);
+//
+// const user = {
+//     name : "Max",
+//     age : 32
+// };
+//
+// const extendedUser = {
+//     isAdmin : true,
+//     ...user
+// }
+//
+// console.log(extendedUser);
 
-const hobbies = ["Sports", "Cooking", "Reading"];
-const newHobbies = ["Gaming"];
+// # 제어 구조
 
-const mergeHobbies = [...hobbies ,...newHobbies];
-console.log(mergeHobbies);
+const password  = prompt("Your Password");
 
-const user = {
-    name : "Max",
-    age : 32
-};
-
-const extendedUser = {
-    isAdmin : true,
-    ...user
+if (password === "Hello") {
+    console.log("Hello, works");
+} else if (password === "hello") {
+    console.log("hello, works");
+} else {
+    console.log("Access not granted.");
 }
 
-console.log(extendedUser);
+const hobbies = ["Sports", "Cooking"];
+
+for (const hobby of hobbies){
+    console.log(hobby);
+}
