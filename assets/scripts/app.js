@@ -77,27 +77,45 @@
 // user1.greet();
 // console.log(user1);
 
-const hobbies = ["Sports", "Cooking", "Reading"];
-console.log(hobbies[0]);
+// const hobbies = ["Sports", "Cooking", "Reading"];
+// console.log(hobbies[0]);
 
-hobbies.push("Working");
-console.log(hobbies);
+// hobbies.push("Working");
+// console.log(hobbies);
 
 //
 // const index = hobbies.findIndex((item) => {
 //     return item === "Sports";
 // });
 
-const index = hobbies.findIndex(item => item === "Sports");
+// const index = hobbies.findIndex(item => item === "Sports");
 
-console.log(hobbies[index]);
+// console.log(hobbies[index]);
 
 // let editedHobbies = hobbies.map((item)=> item + "!");
-let editedHobbies = hobbies.map((item)=> ({text : item}));
-console.log(editedHobbies);
+// let editedHobbies = hobbies.map((item)=> ({text : item}));
+// console.log(editedHobbies);
 
+/*
 function transformToObjects(numberArray) {
-    // Todo: Add your logic
-    // should return an array of objects
+    Todo: Add your logic
+    should return an array of objects
     return numberArray.map(number => ({val : number}));
+}*/
+
+// const userNameData = ["Kim", "Cheoljun"];
+// const firstName = userNameData[0];
+// const lastName = userNameData[1];
+
+// const [firstName, lastName] = ["Kim", "Cheoljun"];
+
+// console.log(firstName);
+// console.log(lastName);
+
+const {name : userName, age} = {
+    name : "Max",
+    age : 32
 }
+
+console.log(userName);
+console.log(age);
