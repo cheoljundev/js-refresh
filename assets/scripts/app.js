@@ -160,18 +160,23 @@ function transformToObjects(numberArray) {
 
 // # 제어 구조
 
-const password  = prompt("Your Password");
+// const password  = prompt("Your Password");
+//
+// if (password === "Hello") {
+//     console.log("Hello, works");
+// } else if (password === "hello") {
+//     console.log("hello, works");
+// } else {
+//     console.log("Access not granted.");
+// }
+//
+// const hobbies = ["Sports", "Cooking"];
+//
+// for (const hobby of hobbies){
+//     console.log(hobby);
+// }
 
-if (password === "Hello") {
-    console.log("Hello, works");
-} else if (password === "hello") {
-    console.log("hello, works");
-} else {
-    console.log("Access not granted.");
-}
+// # 리액트 없이 DOM 조작하기
 
-const hobbies = ["Sports", "Cooking"];
-
-for (const hobby of hobbies){
-    console.log(hobby);
-}
+const ul = document.querySelector("ul");
+ul.remove();
