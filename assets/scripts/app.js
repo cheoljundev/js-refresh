@@ -6,10 +6,14 @@
 
 // import * as util from "./util.js"; // util 자체를 import
 
-import { apikey, abc as content} from "./util.js"; // as 키워드로 별칭 설정
+// import { apikey, abc as content} from "./util.js"; // as 키워드로 별칭 설정
 
 // console.log(util.default);
 // console.log(util.apikey);
 // console.log(util.abc);
 
-console.log(content);
+// console.log(content);
+
+const userMessage = "Hello, World!";
+
+console.log(userMessage);
