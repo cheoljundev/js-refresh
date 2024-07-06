@@ -14,6 +14,11 @@
 
 // console.log(content);
 
-const userMessage = "Hello, World!";
+// const userMessage = "Hello, World!";
 
-console.log(userMessage);
+// console.log(userMessage);
+
+console.log("hello" + " world");
+console.log(10 === 10);
+
+if (10 === 10) console.log("works");
