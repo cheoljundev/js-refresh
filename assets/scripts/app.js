@@ -183,22 +183,34 @@ function transformToObjects(numberArray) {
 
 // # 함수를 값으로 사용하기
 
-function handlerTimeout(){
-    console.log("Time out!");
+// function handlerTimeout(){
+//     console.log("Time out!");
+// }
+//
+// const handlerTimeout2 = ()=>{
+//     console.log("Time out!... again!");
+// }
+//
+// setTimeout(handlerTimeout, 2000);
+// setTimeout(handlerTimeout2, 3000);
+// setTimeout(()=>{
+//     console.log("More timing out...")
+// }, 4000);
+//
+// function greeter(greetFn) {
+//     greetFn();
+// }
+//
+// greeter(()=> console.log("greet!!"))
+
+// # 함수 내부에서 함수 정의하기
+
+function init(){
+    function greet(){
+        console.log("Hi!");
+    }
+
+    greet();
 }
 
-const handlerTimeout2 = ()=>{
-    console.log("Time out!... again!");
-}
-
-setTimeout(handlerTimeout, 2000);
-setTimeout(handlerTimeout2, 3000);
-setTimeout(()=>{
-    console.log("More timing out...")
-}, 4000);
-
-function greeter(greetFn) {
-    greetFn();
-}
-
-greeter(()=> console.log("greet!!"))
+init();
