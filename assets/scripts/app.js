@@ -1,3 +1,5 @@
+// # import / export
+
 // import { apikey } from "./util.js" // 변수 하나 import
 
 // import apikey from "./util.js"; // default import
@@ -14,14 +16,20 @@
 
 // console.log(content);
 
+// # 변수와 값
+
 // const userMessage = "Hello, World!";
 
 // console.log(userMessage);
+
+// # 연산자
 
 // console.log("hello" + " world");
 // console.log(10 === 10);
 
 // if (10 === 10) console.log("works");
+
+// # 함수와 매개변수
 
 // function greet(userName, message = "Hello"){
 //     console.log(userName);
@@ -41,9 +49,13 @@
 // let greeting2 = createGreeting("Lee", "What's up?");
 // console.log(greeting2);
 
+// # 화살표 함수를 export 하기
+
 // export default (userName, message) => {
 //     return "Hi!, I am " + userName + ". " + message;
 // }
+
+// # 객체와 클래스
 
 // const user = {
 //     name : "Max",
@@ -77,6 +89,8 @@
 // user1.greet();
 // console.log(user1);
 
+// # 배열 및 배열 메소드
+
 // const hobbies = ["Sports", "Cooking", "Reading"];
 // console.log(hobbies[0]);
 
@@ -96,12 +110,16 @@
 // let editedHobbies = hobbies.map((item)=> ({text : item}));
 // console.log(editedHobbies);
 
+// # 배열 및 배열 메소드 테스트 문제
+
 /*
 function transformToObjects(numberArray) {
     Todo: Add your logic
     should return an array of objects
     return numberArray.map(number => ({val : number}));
 }*/
+
+// # 디스트럭쳐링
 
 // const userNameData = ["Kim", "Cheoljun"];
 // const firstName = userNameData[0];
