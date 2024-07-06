@@ -45,34 +45,53 @@
 //     return "Hi!, I am " + userName + ". " + message;
 // }
 
-const user = {
-    name : "Max",
-    age : 32,
-    greet() {
-        console.log("Hello!");
-        console.log(this.name);
-        console.log(this.age);
-    }
-};
+// const user = {
+//     name : "Max",
+//     age : 32,
+//     greet() {
+//         console.log("Hello!");
+//         console.log(this.name);
+//         console.log(this.age);
+//     }
+// };
 
 // console.log(user);
 // console.log(user.name);
 // console.log(user.age);
 // user.greet();
 
-class User {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
+// class User {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//
+//     greet() {
+//         console.log("Hello!");
+//         console.log(this.name);
+//         console.log(this.age);
+//     }
+// }
 
-    greet() {
-        console.log("Hello!");
-        console.log(this.name);
-        console.log(this.age);
-    }
-}
+// const user1 = new User("Max", 32);
+// user1.greet();
+// console.log(user1);
 
-const user1 = new User("Max", 32);
-user1.greet();
-console.log(user1);
+const hobbies = ["Sports", "Cooking", "Reading"];
+console.log(hobbies[0]);
+
+hobbies.push("Working");
+console.log(hobbies);
+
+//
+// const index = hobbies.findIndex((item) => {
+//     return item === "Sports";
+// });
+
+const index = hobbies.findIndex(item => item === "Sports");
+
+console.log(hobbies[index]);
+
+// let editedHobbies = hobbies.map((item)=> item + "!");
+let editedHobbies = hobbies.map((item)=> ({text : item}));
+console.log(editedHobbies);
