@@ -95,3 +95,9 @@ console.log(hobbies[index]);
 // let editedHobbies = hobbies.map((item)=> item + "!");
 let editedHobbies = hobbies.map((item)=> ({text : item}));
 console.log(editedHobbies);
+
+function transformToObjects(numberArray) {
+    // Todo: Add your logic
+    // should return an array of objects
+    return numberArray.map(number => ({val : number}));
+}
