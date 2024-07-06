@@ -130,10 +130,30 @@ function transformToObjects(numberArray) {
 // console.log(firstName);
 // console.log(lastName);
 
-const {name : userName, age} = {
+// const {name : userName, age} = {
+//     name : "Max",
+//     age : 32
+// }
+
+// console.log(userName);
+// console.log(age);
+
+// # 스프레드 연산자
+
+const hobbies = ["Sports", "Cooking", "Reading"];
+const newHobbies = ["Gaming"];
+
+const mergeHobbies = [...hobbies ,...newHobbies];
+console.log(mergeHobbies);
+
+const user = {
     name : "Max",
     age : 32
+};
+
+const extendedUser = {
+    isAdmin : true,
+    ...user
 }
 
-console.log(userName);
-console.log(age);
+console.log(extendedUser);
