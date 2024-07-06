@@ -23,20 +23,24 @@
 
 // if (10 === 10) console.log("works");
 
-function greet(userName, message = "Hello"){
-    console.log(userName);
-    console.log(message);
-}
+// function greet(userName, message = "Hello"){
+//     console.log(userName);
+//     console.log(message);
+// }
 
-function createGreeting(userName, message = "Hello"){
-    return "Hi!, I am " + userName + ". " + message;
-}
+// function createGreeting(userName, message = "Hello"){
+//     return "Hi!, I am " + userName + ". " + message;
+// }
 
 // greet("Kim", );
 // greet("Lee", "Hi");
 
-let greeting1 = createGreeting("Kim", "Hi");
-console.log(greeting1);
+// let greeting1 = createGreeting("Kim", "Hi");
+// console.log(greeting1);
 
-let greeting2 = createGreeting("Lee", "What's up?");
-console.log(greeting2);
+// let greeting2 = createGreeting("Lee", "What's up?");
+// console.log(greeting2);
+
+export default (userName, message) => {
+    return "Hi!, I am " + userName + ". " + message;
+}
