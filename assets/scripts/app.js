@@ -178,5 +178,27 @@ function transformToObjects(numberArray) {
 
 // # 리액트 없이 DOM 조작하기
 
-const ul = document.querySelector("ul");
-ul.remove();
+// const ul = document.querySelector("ul");
+// ul.remove();
+
+// # 함수를 값으로 사용하기
+
+function handlerTimeout(){
+    console.log("Time out!");
+}
+
+const handlerTimeout2 = ()=>{
+    console.log("Time out!... again!");
+}
+
+setTimeout(handlerTimeout, 2000);
+setTimeout(handlerTimeout2, 3000);
+setTimeout(()=>{
+    console.log("More timing out...")
+}, 4000);
+
+function greeter(greetFn) {
+    greetFn();
+}
+
+greeter(()=> console.log("greet!!"))
